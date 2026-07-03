@@ -133,7 +133,7 @@ fn main() -> bitcoincore_rpc::Result<()> {
             trader_output_address = output_address;
             trader_amount_received = output.value;
         } else {
-            // This output is the leftover change going back to the Miner
+            // This output is the leftover change going back to the Miner also
             miner_change_address = output_address;
             miner_change_amount = output.value;
         }
